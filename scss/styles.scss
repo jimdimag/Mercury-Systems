@@ -1,0 +1,204 @@
+@import "variables";
+@import "header";
+
+/* General styling */
+body {
+    font-size: 1.5em;
+}
+header, main, footer {
+    width: 90%;
+    margin: auto;
+}
+main > div {
+    margin: auto;
+}
+.mt-25 {
+    margin-top: 25px;
+}
+.mt-15 {
+    margin-top: 15px;
+}
+.pl-0 {
+    padding-left: 0;
+}
+.pr-0 {
+    padding-right: 0;
+}
+h1, h2, h3 {
+    text-align: center;
+}
+
+  .half-img {
+      width: 100%;
+  }
+
+/*SKIP NAVIGATION */
+.skip {
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
+    height: 1px;
+    width: 1px;
+    text-align: left;
+    overflow: hidden;
+}
+
+a.skip:active,
+a.skip:focus,
+a.skip:hover {
+    left: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    color: $orange;
+}
+/* Header Section */
+nav {
+    position: relative;
+    margin: auto;
+}
+.donate {
+    position: absolute;
+    right: 0;
+    top: 25%;
+}
+.btn-primary {
+    font-size: 1.5em;
+    background-color: $blue;
+    border-color: $blue;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    background-color: $blue;
+    border-color: $orange;
+}
+@media (max-width: 475px) {
+    .donate {
+        position: relative;
+    }
+}
+/* Introduction Section */
+#intro {
+    background: linear-gradient(rgba(231, 239, 241, 0.5), rgba(231, 239, 241, 0.5)),url(../../images/pothole-8.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    height: 35vh;  
+    text-align: center;
+    padding: 10px 0;
+}
+@media (max-width: 1024px) {
+    #intro {
+        background-size: cover;
+        height: 100%;
+    }
+}
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+    #intro {
+      background-attachment: scroll;
+    }
+  }
+  .intro {
+      font-weight: bold;
+  }
+  /* Event Section */
+  #events {
+      background-color: $blue;
+      color: #fff;
+  }
+ .event-info {
+     position: relative;
+ }
+ .register {
+     position: absolute;
+     bottom: 12%;
+ }
+ @media (max-width: 1024px) {
+    .register {
+        position: relative;
+    }
+    #events img {
+        padding-left: 0;
+    }
+ }
+.btn-secondary {
+    background-color: $orange;
+    border-color: $orange;
+    font-size: 1.5em
+}
+.register:hover, .register:focus, .register:active {
+    background-color: $orange;
+    border-color: $blue;
+}
+/* Tours, Threats and Join boxes */
+#blocks .row {
+    justify-content: space-between;
+}
+#blocks h3 {
+    font-weight: bold;
+}
+.tours {
+    background: linear-gradient(rgba(231, 239, 241, 0.5), rgba(231, 239, 241, 0.5)),url(../../images/pothole-2.jpg);
+}
+.threats {
+    background: linear-gradient(rgba(231, 239, 241, 0.5), rgba(231, 239, 241, 0.5)),url(../../images/pothole-3.jpg);
+}
+
+.join {
+    background: linear-gradient(rgba(231, 239, 241, 0.5), rgba(231, 239, 241, 0.5)),url(../../images/pothole-4.jpg);
+}
+
+.tours, .threats, .join {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll; 
+    min-height: 225px;
+    font-weight: bold;
+    text-align: center;
+    font-size: .85em;
+}
+@media (max-width: 1024px) {
+    .threats, .join {
+        margin-top: 15px;
+    }
+}
+
+/* Footer Styles */
+footer {
+    font-size: .75em;
+    padding: 25px 0;
+}
+.footer {
+    margin: auto;
+    margin-top: 25px;
+}
+footer ul {
+    list-style-type: none;
+}
+.social {
+    text-align: center;
+}
+.social, .social-icons li {
+    display: inline-block;
+}
+.social-icons li img {
+    max-width: 60px;
+}
+.copy {
+    font-size: .5em;
+}
+@media (max-width: 768px) {
+.social {
+    text-align: left;
+    padding-left: 0;
+    h3 {
+        text-align: left;
+    }
+}
+.social-icons {
+    padding-left: 0;
+}
+}

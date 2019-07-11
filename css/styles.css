@@ -1,0 +1,10 @@
+header {
+  max-width: 90%;
+  margin: auto; }
+
+main {
+  width: 90%;
+  margin: auto; }
+
+main > div {
+  margin: auto; }
